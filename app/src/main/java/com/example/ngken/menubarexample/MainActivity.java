@@ -1,5 +1,6 @@
 package com.example.ngken.menubarexample;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -25,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
         switch (item.getItemId()) {
             case R.id.menuMain1:
                 Toast.makeText(getApplicationContext(), "Option1", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(getApplicationContext(), MenuIconActivity.class));
                 break;
             case R.id.menuMain2:
                 Toast.makeText(getApplicationContext(), "Option2", Toast.LENGTH_SHORT).show();
